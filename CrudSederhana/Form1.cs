@@ -25,6 +25,19 @@ namespace CrudSederhana
         {
             LoadData();
         }
+
+        //Fungsi untuk mengosongkan semua input pada textbox
+        private void ClearForm()
+        {
+            txtNIM.Clear();
+            txtNAMA.Clear();
+            txtEMAIL.Clear();
+            txtTELEPON.Clear();
+            txtALAMAT.Clear();
+
+            //Fokus kembali ke NIM agar user siap memasukkan data baru
+            txtNIM.Focus();
+        }
         
 
         private void btnTAMBAH_Click(object sender, EventArgs e)
