@@ -48,7 +48,7 @@ namespace CrudSederhana
                 try
                 {
                     conn.Open();
-
+                    string query = "SELECT NIM AS [NIM], NAMA, EMAIL, TELEPON, ALAMAT FROM Mahasiswa";
                 }
             }
         }
