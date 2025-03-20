@@ -20,6 +20,11 @@ namespace CrudSederhana
             InitializeComponent();
         }
 
+        //Event saat form pertama kali dibuat
+        private void Form_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
         
 
         private void btnTAMBAH_Click(object sender, EventArgs e)
