@@ -161,7 +161,7 @@ namespace CrudSederhana
         //Fungsi untuk merefresh tampilan DataGridView
         private void btnREFRESH_Click(object sender, EventArgs e)
         {
-
+            LoadData();
         }
 
         private void dgvMahasiswa_CellClick(object sender, DataGridViewCellEventArgs e)
