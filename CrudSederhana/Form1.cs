@@ -147,6 +147,10 @@ namespace CrudSederhana
                     }
                 }
             }
+            else
+            {
+                MessageBox.Show("Pilih data yang akan dihapus!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnUBAH_Click(object sender, EventArgs e)
