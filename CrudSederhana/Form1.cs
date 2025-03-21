@@ -141,6 +141,9 @@ namespace CrudSederhana
                             }
                         }
                         catch (Exception ex)
+                        {
+                            MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
             }
