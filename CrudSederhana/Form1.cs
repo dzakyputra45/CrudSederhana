@@ -121,6 +121,8 @@ namespace CrudSederhana
                         {
                             string nim = dgvMahasiswa.SelectedRows[0].Cells["NIM"].Value.ToString();
                             conn.Open();
+                            string query = "DELETE FROM Mahasiswa WHERE NIM = @NIM";
+
                         }
                     }
                 }
