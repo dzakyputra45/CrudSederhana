@@ -176,6 +176,7 @@ namespace CrudSederhana
 
                 //coba gunakan indeks jika "NIM" tidak ditemukan
                 txtNIM.Text = row.Cells[0].Value.ToString();
+                txtNAMA.Text = row.Cells[1].Value?.ToString();
             }
         }
     }
