@@ -162,6 +162,10 @@ namespace CrudSederhana
         private void btnREFRESH_Click(object sender, EventArgs e)
         {
             LoadData();
+
+            //Debuggging ; Cek jumlah kolom dan baris
+            MessageBox.Show($"Jumlah Kolom: {dgvMahasiswa.ColumnCount}\nJumlah Baris: {dgvMahasiswa.RowCount}",
+                "Debugging DataGridView", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void dgvMahasiswa_CellClick(object sender, DataGridViewCellEventArgs e)
