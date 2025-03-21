@@ -110,7 +110,10 @@ namespace CrudSederhana
 
         private void btnHAPUS_Click(object sender, EventArgs e)
         {
+            if (dgvMahasiswa.SelectedRows.Count > 0)
+            {
 
+            }
         }
 
         private void btnUBAH_Click(object sender, EventArgs e)
