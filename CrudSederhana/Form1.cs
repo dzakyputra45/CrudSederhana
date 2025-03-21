@@ -88,6 +88,8 @@ namespace CrudSederhana
                         cmd.Parameters.AddWithValue("@TELEPON", txtTELEPON.Text.Trim());
                         cmd.Parameters.AddWithValue("@ALAMAT", txtALAMAT.Text.Trim());
 
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
                     }
                 }
             }
