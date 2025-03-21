@@ -116,6 +116,13 @@ namespace CrudSederhana
                 if (confirm == DialogResult.Yes)
                 {
                     using (SqlConnection conn = new SqlConnection(connectionstring))
+                    {
+                        try
+                        {
+                            string nim = dgvMahasiswa.SelectedRows[0].Cells["NIM"].Value.ToString();
+
+                        }
+                    }
                 }
             }
         }
