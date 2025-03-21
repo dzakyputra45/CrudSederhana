@@ -179,6 +179,7 @@ namespace CrudSederhana
                 txtNAMA.Text = row.Cells[1].Value?.ToString();
                 txtEMAIL.Text = row.Cells[2].Value?.ToString();
                 txtTELEPON.Text = row.Cells[3].Value?.ToString();
+                txtALAMAT.Text = row.Cells[4].Value?.ToString();
             }
         }
     }
