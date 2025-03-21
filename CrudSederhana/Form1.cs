@@ -125,8 +125,10 @@ namespace CrudSederhana
 
                             using (SqlCommand cmd = new SqlCommand(query, conn))
                             {
-                                cmd.Parameters.AddWithValue("@NIM, nim");
+                                cmd.Parameters.AddWithValue("@NIM, NIM");
                                 int rowsAffected = cmd.ExecuteNonQuery();
+
+                                if (rowsAffected > 0)
                             }
                         }
                     }
