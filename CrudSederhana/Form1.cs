@@ -66,9 +66,15 @@ namespace CrudSederhana
             }
         }
 
+        //Fungsi untuk menambahkan data
         private void btnTAMBAH_Click(object sender, EventArgs e)
         {
-
+            using (SqlConnection conn = new SqlConnection(connectionstring))
+            { 
+                try
+                {
+                }
+            }
         }
 
         private void btnHAPUS_Click(object sender, EventArgs e)
