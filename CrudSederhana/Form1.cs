@@ -95,6 +95,11 @@ namespace CrudSederhana
                             LoadData();
                             ClearForm(); //auto clear setelah tambah data
                         }
+                        else
+                        {
+                            MessageBox.Show("Data tidak berhasil ditambahkan!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        }
                     }
                 }
             }
