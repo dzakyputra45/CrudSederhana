@@ -82,6 +82,11 @@ namespace CrudSederhana
                     string query = "Insert INTO Mahasiswa (NIM, NAMA, EMAIL, TELEPON, ALAMAT) VALUES (@NIM, @NAMA, @EMAIL, @TELEPON, @ALAMAT)";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
+                        cmd.Parameters.AddWithValue("@NIM", txtNIM.Text.Trim());
+                        cmd.Parameters.AddWithValue("@NAMA", txtNAMA.Text.Trim());
+                        cmd.Parameters.AddWithValue("@EMAIL", txtEMAIL.Text.Trim());
+                        cmd.Parameters.AddWithValue("@TELEPON", txtTELEPON.Text.Trim());
+                        cmd.Parameters.AddWithValue("@ALAMAT", txtALAMAT.Text.Trim());
 
                     }
                 }
