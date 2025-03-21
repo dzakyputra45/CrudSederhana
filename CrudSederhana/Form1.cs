@@ -92,7 +92,8 @@ namespace CrudSederhana
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Data berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            
+                            LoadData();
+                            ClearForm(); //auto clear setelah tambah data
                         }
                     }
                 }
