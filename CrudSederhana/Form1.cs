@@ -134,6 +134,10 @@ namespace CrudSederhana
                                     LoadData();
                                     ClearForm(); // Auto clear setelah hapus data
                                 }
+                                else
+                                {
+                                    MessageBox.Show("Data tidak ditemukan atau gagal dihapus!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
                             }
                         }
                     }
