@@ -131,6 +131,8 @@ namespace CrudSederhana
                                 if (rowsAffected > 0)
                                 {
                                     MessageBox.Show("Data Berhasil dihapus!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    LoadData();
+                                    ClearForm(); // Auto clear setelah hapus data
                                 }
                             }
                         }
