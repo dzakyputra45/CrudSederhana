@@ -89,6 +89,7 @@ namespace CrudSederhana
                         cmd.Parameters.AddWithValue("@ALAMAT", txtALAMAT.Text.Trim());
 
                         int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
 
                     }
                 }
