@@ -76,6 +76,13 @@ namespace CrudSederhana
                     if (txtNIM.Text == "" || txtNAMA.Text == "" || txtEMAIL.Text == "" || txtTELEPON.Text == "")
                     {
                         MessageBox.Show("Harap isi semua data!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                    conn.Open();
+                    string query = "Insert INTO Mahasiswa (NIM, NAMA, EMAIL, TELEPON, ALAMAT) VALUES (@NIM, @NAMA, @EMAIL, @TELEPON, @ALAMAT)";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+
                     }
                 }
             }
