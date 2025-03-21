@@ -140,6 +140,7 @@ namespace CrudSederhana
                                 }
                             }
                         }
+                        catch (Exception ex)
                     }
                 }
             }
