@@ -129,6 +129,9 @@ namespace CrudSederhana
                                 int rowsAffected = cmd.ExecuteNonQuery();
 
                                 if (rowsAffected > 0)
+                                {
+                                    MessageBox.Show("Data Berhasil dihapus!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                }
                             }
                         }
                     }
